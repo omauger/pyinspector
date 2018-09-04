@@ -1,18 +1,19 @@
 from setuptools import setup, find_packages
+import os
 
 
 base_dir = os.path.dirname(__file__)
-readme_path = join(base_dir, 'README.md')
+readme_path = '%s%s' % (''.join(base_dir), 'README.md')
 with open(readme_path) as stream:
     long_description = stream.read()
 
 setup(
-    name='pyquality',
-    url='https://github.com/omauger/pyquality',
+    name='pyinspector',
+    url='https://github.com/omauger/pyinspector',
     author='Ophélie Mauger',
     packages=find_packages(where='.'),
     entry_points={
-        'console_scripts': ['pyquality=pyquality:main'],
+        'console_scripts': ['pyinspector=pyinspector:main'],
     },
     install_requires=[
         'flake8', 'coverage', 'pylint', 'radon',
@@ -21,5 +22,5 @@ setup(
     version='1.0',
     license='MIT',
     description='A module to easely run quality pipeline for python project',
-    loong_description=long_description,
+    long_description=long_description,
 )
