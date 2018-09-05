@@ -1,4 +1,4 @@
-# pyquality
+# pyinspector
 
 Pipeline to run quality tools on python projet :
 * unittest
