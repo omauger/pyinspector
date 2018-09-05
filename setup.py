@@ -13,13 +13,13 @@ setup(
     author='Ophélie Mauger',
     packages=find_packages(where='.'),
     entry_points={
-        'console_scripts': ['pyinspector=pyinspector:main'],
+        'console_scripts': ['pyinspector=pyinspector.__main__:main'],
     },
     install_requires=[
         'flake8', 'coverage', 'pylint', 'radon',
         'xenon', 'coloredlogs', 'verboselogs'
     ],
-    version='1.2',
+    version='1.3',
     license='MIT',
     description='A module to easely run quality pipeline for python project',
     long_description=long_description,
