@@ -19,7 +19,7 @@ setup(
         'flake8', 'coverage', 'pylint', 'radon',
         'xenon', 'coloredlogs', 'verboselogs'
     ],
-    version='1.0',
+    version='1.2',
     license='MIT',
     description='A module to easely run quality pipeline for python project',
     long_description=long_description,
